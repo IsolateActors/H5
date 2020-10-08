@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			img{
+				width: 400px;
+				height: auto;
+				display: block;
+				margin: 0 auto;
+				
+				transition: all 3s;
+			}
+			
+			img:hover{
+				-webkit-filter: none;
+			}
+			
+			.img1{
+				/* 滤镜 */
+				
+				-webkit-filter: grayscale(1);
+			}
+			
+			.img2{
+				/* 亮度 */
+				-webkit-filter: brightness(0);
+			}
+			
+			.img3{
+				/* 褐色 */
+				-webkit-filter: sepia(1);
+			}
+			
+			.img4{
+				/* 模糊度 */
+				-webkit-filter: blur(5px);
+			}
+			.img5{
+				/* 对比度 */
+				-webkit-filter: contrast(0.5);
+			}
+			
+			.img6{
+				/* 饱和度 */
+				-webkit-filter: saturate(2);
+			}
+			
+			.img7{
+				/* 胶片底色 */
+				-webkit-filter: invert(1);
+			}
+			
+			.img8{
+				/* 色度旋转 */
+				-webkit-filter: hue-rotate(90deg);
+			}
+			
+			.img9{
+				-webkit-filter: brightness(10) grayscale(1);
+				transition: all 15s;
+			}
+			
+			.img9:hover{
+				-webkit-filter: brightness(1) grayscale(1);
+			}
+		</style>
+	</head>
+	<body>
+		<img class="img1" src="./img/timg.jpg" >
+		<img class="img2" src="./img/timg.jpg" >
+		<img class="img3" src="./img/timg.jpg" >
+		<img class="img4" src="./img/timg.jpg" >
+		<img class="img5" src="./img/timg.jpg" >
+		<img class="img6" src="./img/timg.jpg" >
+		<img class="img7" src="./img/timg.jpg" >
+		<img class="img8" src="./img/timg.jpg" >
+		
+		<img class="img9" src="./img/timg.jpg" >
+	</body>
+</html>

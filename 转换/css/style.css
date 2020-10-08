@@ -1,0 +1,62 @@
+body {
+	perspective: 1000px;
+}
+
+.lifangti {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	/* margin: 200px auto; */
+
+	transform-style: preserve-3d;
+	transition: all 5s;
+}
+
+.lifangti:hover {
+	/* transform: rotate3d(1,0,1,360deg); */
+	transform: rotateX(360deg) rotateZ(360deg);
+}
+
+.page {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	opacity: 0.6;
+
+}
+
+.front {
+	background: url(../img/img1.jpg) no-repeat;
+	background-size: 100% 100%;
+	transform: translateZ(100px);
+}
+
+.back {
+	background: url(../img/img2.jpg) no-repeat;
+	background-size: 100% 100%;
+	transform: translateZ(-100px);
+}
+
+.right {
+	background: url(../img/img3.jpg) no-repeat;
+	background-size: 100% 100%;
+	transform: rotateY(90deg) translateZ(100px);
+}
+
+.left {
+	background: url(../img/img4.jpg) no-repeat;
+	background-size: 100% 100%;
+	transform: rotateY(-90deg) translateZ(100px);
+}
+
+.top {
+	background: url(../img/img5.jpg) no-repeat;
+	background-size: 100% 100%;
+	transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+	background: url(../img/img6.jpg) no-repeat;
+	background-size: 100% 100%;
+	transform: rotateX(-90deg) translateZ(100px);
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.loding{
+				position: relative;
+				margin: 0 auto;
+				width: 300px;
+				height: 300px;
+			}
+			
+			.loding .circle{
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			
+			.small{
+				width: 30px;
+				height: 30px;
+				background: deepskyblue;
+				margin: 10px auto;
+				border-radius: 15px;
+			}
+			
+			@keyframes loding{
+				from{
+					opacity: 1;
+				}
+				to{
+					opacity: 0.1;
+				}
+			}
+			
+			.loding .circle:nth-child(1){
+				transform: rotate(45deg);
+				
+				animation: loding 1s infinite 0.1s;
+			}
+			.loding .circle:nth-child(2){
+				transform: rotate(90deg);
+				animation: loding 1s infinite 0.2s;
+			}
+			.loding .circle:nth-child(3){
+				transform: rotate(135deg);
+				animation: loding 1s infinite 0.3s;
+			}
+			.loding .circle:nth-child(4){
+				transform: rotate(180deg);
+				animation: loding 1s infinite .4s;
+			}
+			.loding .circle:nth-child(5){
+				transform: rotate(225deg);
+				animation: loding 1s infinite .5s;
+			}
+			.loding .circle:nth-child(6){
+				transform: rotate(270deg);
+				animation: loding 1s infinite 0.6s;
+			}
+			.loding .circle:nth-child(7){
+				transform: rotate(315deg);
+				animation: loding 1s infinite 0.7s;
+			}
+			.loding .circle:nth-child(8){
+				transform: rotate(360deg);
+				animation: loding 1s infinite 0.8s;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="loding">
+			<div class="circle">
+				<div class="small"></div>
+			</div>
+			<div class="circle">
+				<div class="small"></div>
+			</div>
+			<div class="circle">
+				<div class="small"></div>
+			</div>
+			<div class="circle">
+				<div class="small"></div>
+			</div>
+			<div class="circle">
+				<div class="small"></div>
+			</div>
+			<div class="circle">
+				<div class="small"></div>
+			</div>
+			<div class="circle">
+				<div class="small"></div>
+			</div>
+			<div class="circle">
+				<div class="small"></div>
+			</div>
+		</div>
+	</body>
+</html>
